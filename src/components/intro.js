@@ -30,6 +30,16 @@ const Intro = () => {
                         a match. (After all the squares are marked)
                     </li>
                     <li>Refrest the page to play again.</li>
+                    <li>
+                        Note: This project is open source you can use it/add new
+                        features.{" "}
+                        <a
+                            href="https://github.com/hsnmnr/tic-tac-toe"
+                            target="_blank"
+                        >
+                            Take a look at GitHub repo
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
