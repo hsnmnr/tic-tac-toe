@@ -12,6 +12,10 @@ const Game = () => {
         setTurns(turns + 1);
     }, [status]);
 
+    const restartGame = () => {
+        window.location.reload();
+    }
+    
     return (
         <div id="main">
             <Intro />
@@ -29,10 +33,12 @@ const Game = () => {
                 {winner !== "" ? (
                     <div className="game-info">
                         <div> Player {winner} won</div>
+                        <button onClick={restartGame}>重新开始游戏</button>
                     </div>
                 ) : turns > 9 ? (
                     <div className="game-info">
                         <div> Its a DRAW</div>
+                        <button onClick={restartGame}>重新开始游戏</button>
                     </div>
                 ) : (
                     ""
